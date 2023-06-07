@@ -1,2 +1,0 @@
-model_checkpoint_path: "saved_model_config_name"
-all_model_checkpoint_paths: "saved_model_config_name"
