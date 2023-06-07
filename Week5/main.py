@@ -34,7 +34,7 @@ class BasicConv(tf.keras.Model):
     def __init__(self):
         super(BasicConv, self).__init__()
         self.metrics_list = [tf.keras.metrics.Mean(name="loss"),
-                             tf.keras.metrics.BinaryAccuracy()]
+                             tf.keras.metrics.CategoricalAccuracy()]
 
         self.optimizer = tf.keras.optimizers.Adam()
         # Adam optimizer performs a bit better than SGD

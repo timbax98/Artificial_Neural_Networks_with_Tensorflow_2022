@@ -14,7 +14,7 @@ val_ds_1 = mnist[1]
 train_ds_2 = mnist[0]
 val_ds_2 = mnist[1]
 
-# 2. write function to create the dataset that we want
+# 2. preprocessing of the dataset
 def preprocess1(data, batch_size, task):
     # image should be float
     data = data.map(lambda x, t: (tf.cast(x, float), t))
